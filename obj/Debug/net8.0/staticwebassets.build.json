@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "aoSQKG9wTNbPS6ubk4tTmTcvYrhp8TKRLWeVF1NCnUU=",
+  "Hash": "7a+8HYDqjTYBzt0SBbfYg3pnrZ3RghECFpKU1vZ6cJg=",
   "Source": "AdminPanel",
   "BasePath": "_content/AdminPanel",
   "Mode": "Default",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "sscodvshrr",
-      "Integrity": "NKCI8/LcOz3GdRAijSoQgmc0TcDbCp/q0WP6yvv8RIk=",
+      "Fingerprint": "qqrvup8ps8",
+      "Integrity": "MkAad+T7xy5vkopA6dNDOenReriDfC6IBbPTDWOtcQQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\dashboard.css"
@@ -52,8 +52,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "o43pye74b3",
-      "Integrity": "6FmInWsC+xTYlyEac0cXT9aLlXSOcT4YBFA/XUNh/34=",
+      "Fingerprint": "oywakgzjhd",
+      "Integrity": "oHYq6fmpyBuuyPIvq6H7VVve8GmJJJWVMaB7YtYVa4w=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\login.css"
@@ -99,6 +99,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\sidebar.css"
+    },
+    {
+      "Identity": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\data\\users.json",
+      "SourceId": "AdminPanel",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\",
+      "BasePath": "_content/AdminPanel",
+      "RelativePath": "data/users#[.{fingerprint}]?.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "62gdd0279t",
+      "Integrity": "cmD6vKabj0mLQaamkMXgrBvGuWkyXyhEBi4U4Dy3tRQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\data\\users.json"
     }
   ],
   "Endpoints": [
@@ -113,7 +134,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1869"
+          "Value": "2333"
         },
         {
           "Name": "Content-Type",
@@ -121,11 +142,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"NKCI8/LcOz3GdRAijSoQgmc0TcDbCp/q0WP6yvv8RIk=\""
+          "Value": "\"MkAad+T7xy5vkopA6dNDOenReriDfC6IBbPTDWOtcQQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 02 May 2025 08:07:20 GMT"
+          "Value": "Fri, 02 May 2025 11:27:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -135,12 +156,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-NKCI8/LcOz3GdRAijSoQgmc0TcDbCp/q0WP6yvv8RIk="
+          "Value": "sha256-MkAad+T7xy5vkopA6dNDOenReriDfC6IBbPTDWOtcQQ="
         }
       ]
     },
     {
-      "Route": "css/dashboard.sscodvshrr.css",
+      "Route": "css/dashboard.qqrvup8ps8.css",
       "AssetFile": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\css\\dashboard.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -150,7 +171,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1869"
+          "Value": "2333"
         },
         {
           "Name": "Content-Type",
@@ -158,11 +179,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"NKCI8/LcOz3GdRAijSoQgmc0TcDbCp/q0WP6yvv8RIk=\""
+          "Value": "\"MkAad+T7xy5vkopA6dNDOenReriDfC6IBbPTDWOtcQQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 02 May 2025 08:07:20 GMT"
+          "Value": "Fri, 02 May 2025 11:27:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -172,7 +193,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "sscodvshrr"
+          "Value": "qqrvup8ps8"
         },
         {
           "Name": "label",
@@ -180,7 +201,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-NKCI8/LcOz3GdRAijSoQgmc0TcDbCp/q0WP6yvv8RIk="
+          "Value": "sha256-MkAad+T7xy5vkopA6dNDOenReriDfC6IBbPTDWOtcQQ="
         }
       ]
     },
@@ -195,7 +216,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2251"
+          "Value": "2391"
         },
         {
           "Name": "Content-Type",
@@ -203,11 +224,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"6FmInWsC+xTYlyEac0cXT9aLlXSOcT4YBFA/XUNh/34=\""
+          "Value": "\"oHYq6fmpyBuuyPIvq6H7VVve8GmJJJWVMaB7YtYVa4w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 02 May 2025 07:29:26 GMT"
+          "Value": "Fri, 02 May 2025 10:23:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -217,12 +238,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-6FmInWsC+xTYlyEac0cXT9aLlXSOcT4YBFA/XUNh/34="
+          "Value": "sha256-oHYq6fmpyBuuyPIvq6H7VVve8GmJJJWVMaB7YtYVa4w="
         }
       ]
     },
     {
-      "Route": "css/login.o43pye74b3.css",
+      "Route": "css/login.oywakgzjhd.css",
       "AssetFile": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\css\\login.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -232,7 +253,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2251"
+          "Value": "2391"
         },
         {
           "Name": "Content-Type",
@@ -240,11 +261,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"6FmInWsC+xTYlyEac0cXT9aLlXSOcT4YBFA/XUNh/34=\""
+          "Value": "\"oHYq6fmpyBuuyPIvq6H7VVve8GmJJJWVMaB7YtYVa4w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 02 May 2025 07:29:26 GMT"
+          "Value": "Fri, 02 May 2025 10:23:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -254,7 +275,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "o43pye74b3"
+          "Value": "oywakgzjhd"
         },
         {
           "Name": "label",
@@ -262,7 +283,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-6FmInWsC+xTYlyEac0cXT9aLlXSOcT4YBFA/XUNh/34="
+          "Value": "sha256-oHYq6fmpyBuuyPIvq6H7VVve8GmJJJWVMaB7YtYVa4w="
         }
       ]
     },
@@ -427,6 +448,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-+DQLZNRCv1G1qWQVEJMDaCbZibUJ8z2AZZMzY5JB+MQ="
+        }
+      ]
+    },
+    {
+      "Route": "data/users.62gdd0279t.json",
+      "AssetFile": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\data\\users.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "319"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cmD6vKabj0mLQaamkMXgrBvGuWkyXyhEBi4U4Dy3tRQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 11:04:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "62gdd0279t"
+        },
+        {
+          "Name": "label",
+          "Value": "data/users.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cmD6vKabj0mLQaamkMXgrBvGuWkyXyhEBi4U4Dy3tRQ="
+        }
+      ]
+    },
+    {
+      "Route": "data/users.json",
+      "AssetFile": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\data\\users.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "319"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cmD6vKabj0mLQaamkMXgrBvGuWkyXyhEBi4U4Dy3tRQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 02 May 2025 11:04:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cmD6vKabj0mLQaamkMXgrBvGuWkyXyhEBi4U4Dy3tRQ="
         }
       ]
     }

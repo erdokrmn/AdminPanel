@@ -1,5 +1,6 @@
 ﻿@{
     Layout = null;
+    var hasError = ViewBag.PopupMessage != null;
 }
 
 <!DOCTYPE html>
@@ -17,11 +18,13 @@
             <h2>Welcome !</h2>
             <div class="input-group">
                 <span class="icon">👤</span>
-                <input type="text" name="username" placeholder="username" />
+                <input type="text" name="username" placeholder="username"
+                       class="@(hasError ? "input-error" : "")" />
             </div>
             <div class="input-group">
                 <span class="icon">🔒</span>
-                <input type="password" name="password" placeholder="Password" />
+                <input type="password" name="password" placeholder="Password"
+                       class="@(hasError ? "input-error" : "")" />
             </div>
             <div class="options">
                 <a href="#">Forgot Password ?</a>

@@ -27,11 +27,16 @@
                 <div class="topbar-left">
                     <h1>@ViewData["Title"]</h1>
                 </div>
+                
                 <div class="topbar-right">
                     <div class="profile">
                         <img src="https://via.placeholder.com/40" alt="Profile" />
                         <span>Admin</span>
                     </div>
+
+                    <form asp-action="Logout" asp-controller="Account" method="post" class="logout-form">
+                        <button type="submit" class="logout-button">Çıkış Yap</button>
+                    </form>
                 </div>
             </header>
 
