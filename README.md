@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-📄 README - AdminPanel ASP.NET Core MVC Projesi
+📄 README - AdminPanel
 ------------------------------------------------------------
 
 🔧 Proje Hakkında
