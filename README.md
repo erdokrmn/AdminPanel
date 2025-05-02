@@ -93,4 +93,3 @@ Layout yapısı, sayfa yönlendirmesi ve stil organizasyonu üzerinden her yeni 
 ==========================
 
 Bu proje kişisel ve ticari projelerde temel olarak kullanılmak üzere geliştirildi. Açık kaynaklı olarak dağıtılabilir.
->>>>>>> 720d0d0580c39c7cdf1808b9e6bffa7c63c2a6c0
