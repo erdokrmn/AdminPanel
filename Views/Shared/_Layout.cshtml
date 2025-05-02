@@ -1,5 +1,34 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] - Admin Panel</title>
+
+    <!-- Ana CSS dosyaları -->
+    <link rel="stylesheet" href="~/css/main.css" />
+    <link rel="stylesheet" href="~/css/sidebar.css" />
+
+    @RenderSection("Styles", required: false)
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>Yönetim Paneli</h2>
+            <ul>
+                <li><a href="/Dashboard">Admin Paneli</a></li>
+                <li><a href="/UserPanel">Kullanıcı Paneli</a></li>
+                <li><a href="/Account/Logout">Çıkış Yap</a></li>
+            </ul>
+        </div>
+
+        <!-- Ana içerik -->
+        <div class="content" style="margin-left: 250px; padding: 20px;">
+            @RenderBody()
+        </div>
+    </div>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
