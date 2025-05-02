@@ -20,33 +20,6 @@ Amaç, her yeni projeye başlarken tüm login, layout, yönlendirme gibi işleml
     - _DashboardLayout.cshtml (Yönetici paneli)
 
 ==========================
-📁 Klasör Yapısı
-==========================
-
-/Controllers
-    AccountController.cs
-    DashboardController.cs
-    MainPageController.cs
-
-/Views
-    /Account
-        Login.cshtml
-    /Dashboard
-        Index.cshtml
-    /MainPage
-        MainPage.cshtml
-    /Shared
-        _Layout.cshtml
-        _DashboardLayout.cshtml
-        _ViewImports.cshtml
-
-/wwwroot
-    /css
-        login.css
-        dashboard.css
-        main.css
-
-==========================
 🚀 Kurulum ve Kullanım
 ==========================
 
