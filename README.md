@@ -1,13 +1,11 @@
 ASP.NET Core MVC - Genişletilebilir Admin Panel Template
 
-==========================
 📌 Proje Amacı
 ==========================
 
 Bu proje, ASP.NET Core MVC ile geliştirilen, hem kullanıcı hem de yönetici paneli içeren, sade, responsive ve yeniden kullanılabilir bir temel projedir.
 Amaç, her yeni projeye başlarken tüm login, layout, yönlendirme gibi işlemleri sıfırdan yapmadan, hazır ve düzenli bir altyapı üzerinden hızla ilerlemektir.
 
-==========================
 🧰 Kullanılan Teknolojiler
 ==========================
 
@@ -19,7 +17,6 @@ Amaç, her yeni projeye başlarken tüm login, layout, yönlendirme gibi işleml
     - _Layout.cshtml (Kullanıcı arayüzü)
     - _DashboardLayout.cshtml (Yönetici paneli)
 
-==========================
 🚀 Kurulum ve Kullanım
 ==========================
 
@@ -34,7 +31,6 @@ Amaç, her yeni projeye başlarken tüm login, layout, yönlendirme gibi işleml
    - Visual Studio: F5
    - CLI: dotnet run
 
-==========================
 🔐 Giriş Bilgisi (Varsayılan)
 ==========================
 
@@ -43,7 +39,6 @@ Kullanıcı Adı: admin
 
 Not: Bu sabit değerler AccountController içinde örnek olarak tanımlanmıştır. İsterseniz veritabanı bağlantısı ile değiştirebilirsiniz.
 
-==========================
 🧠 Mimari Detaylar
 ==========================
 
@@ -53,7 +48,6 @@ Not: Bu sabit değerler AccountController içinde örnek olarak tanımlanmışt�
     - Admin → /Dashboard/Index
     - Kullanıcı → /MainPage/MainPage
 
-==========================
 🔧 Genişletme Rehberi
 ==========================
 
@@ -63,7 +57,6 @@ Not: Bu sabit değerler AccountController içinde örnek olarak tanımlanmışt�
 • ViewComponent veya PartialView ile modüler yapı
 • Otomatik test altyapısı (XUnit, NUnit)
 
-==========================
 ✅ Neden Bu Projede Auth Sistemi Kurulmalı?
 ==========================
 
@@ -74,14 +67,12 @@ Not: Bu sabit değerler AccountController içinde örnek olarak tanımlanmışt�
     - User rolü için → MainPage yönlendirmesi
 • Projeye şimdiden temel Auth servisleri (ClaimsPrincipal + Authorize) eklemek uzun vadede avantaj sağlar
 
-==========================
 📬 Geliştirici Notu
 ==========================
 
 Bu proje, sıfırdan admin paneli veya kullanıcı arayüzü tasarlamak yerine bir temel yapı oluşturmak amacıyla geliştirildi.
 Layout yapısı, sayfa yönlendirmesi ve stil organizasyonu üzerinden her yeni projeye hızlıca başlanabilir.
 
-==========================
 🪪 Lisans
 ==========================
 
