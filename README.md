@@ -1,45 +1,115 @@
+ASP.NET Core MVC - Genişletilebilir Admin Panel Template
 
----
+==========================
+📌 Proje Amacı
+==========================
 
-## 🔐 Özellikler
+Bu proje, ASP.NET Core MVC ile geliştirilen, hem kullanıcı hem de yönetici paneli içeren, sade, responsive ve yeniden kullanılabilir bir temel projedir.
+Amaç, her yeni projeye başlarken tüm login, layout, yönlendirme gibi işlemleri sıfırdan yapmadan, hazır ve düzenli bir altyapı üzerinden hızla ilerlemektir.
 
-- Giriş (Login) ekranı
-- Cookie tabanlı kullanıcı doğrulama
-- Layout yapısı: Sidebar + Header + İçerik bölgesi
-- Yetkilendirme korumalı sayfalar
-- Genişletilebilir dashboard altyapısı
-- Responsive tasarım desteği
+==========================
+🧰 Kullanılan Teknolojiler
+==========================
 
----
+- ASP.NET Core MVC (.NET 6+)
+- Razor View Engine
+- Cookie Authentication (manual giriş sistemi)
+- Responsive tasarım (özel CSS ile)
+- İki farklı layout:
+    - _Layout.cshtml (Kullanıcı arayüzü)
+    - _DashboardLayout.cshtml (Yönetici paneli)
 
-## 🚀 Gelecek Geliştirmeler
+==========================
+📁 Klasör Yapısı
+==========================
 
-- Kullanıcı rolleri ve yetki bazlı menü yapısı
-- Grafik destekli analiz alanları (Chart.js)
-- İçerik yönetim paneli (CMS özellikleri)
-- Dosya yükleme ve medya yönetimi
-- Bildirim sistemleri (toast, modal vs.)
+/Controllers
+    AccountController.cs
+    DashboardController.cs
+    MainPageController.cs
 
----
+/Views
+    /Account
+        Login.cshtml
+    /Dashboard
+        Index.cshtml
+    /MainPage
+        MainPage.cshtml
+    /Shared
+        _Layout.cshtml
+        _DashboardLayout.cshtml
+        _ViewImports.cshtml
 
-## ⚙️ Kurulum Adımları
+/wwwroot
+    /css
+        login.css
+        dashboard.css
+        main.css
 
-1. Projeyi klonlayın veya Visual Studio ile oluşturun.
-2. wwwroot klasörüne [belirtilen CSS/JS şablonlarını](https://github.com/erdokrmn/adminpanel-aspnet/tree/main/IdentityServer) yerleştirin.
-3. `Startup.cs` ve `Program.cs` içinde gerekli servisleri ekleyin.
-4. Giriş ekranı ve layout yapılarını oluşturun.
-5. Projeyi çalıştırın:  
-   - Visual Studio: `F5`  
-   - CLI: `dotnet run`
+==========================
+🚀 Kurulum ve Kullanım
+==========================
 
----
+1. Projeyi klonlayın veya kopyalayın:
+   git clone [repo-link]
 
-## 🧑‍💻 Geliştirici Notu
+2. Gerekli NuGet paketlerini yükleyin:
+   - Visual Studio: Tools > NuGet > Restore
+   - CLI: dotnet restore
 
-> Bu proje, ileriye dönük tüm admin tabanlı projelerde tekrar kullanılmak üzere tasarlanmıştır. Tam kontrol için hazır kütüphane veya layout kullanılmamıştır. Geliştirici, sistemi tüm katmanlarıyla anlamayı ve üzerinde özgürce değişiklik yapabilmeyi hedeflemiştir.
+3. Projeyi başlatın:
+   - Visual Studio: F5
+   - CLI: dotnet run
 
----
+==========================
+🔐 Giriş Bilgisi (Varsayılan)
+==========================
 
-## 📬 İletişim
+Kullanıcı Adı: admin
+Şifre: 1234
 
-Herhangi bir soru veya öneri için [proje sahibi GitHub profiline](https://github.com/erdokrmn) ulaşabilirsiniz.
+Not: Bu sabit değerler AccountController içinde örnek olarak tanımlanmıştır. İsterseniz veritabanı bağlantısı ile değiştirebilirsiniz.
+
+==========================
+🧠 Mimari Detaylar
+==========================
+
+• MainPage.cshtml → Layout = "_Layout.cshtml"
+• Dashboard sayfaları → Layout = "_DashboardLayout.cshtml"
+• Giriş sonrası yönlendirme:
+    - Admin → /Dashboard/Index
+    - Kullanıcı → /MainPage/MainPage
+
+==========================
+🔧 Genişletme Rehberi
+==========================
+
+• Role bazlı yetkilendirme → [Authorize(Roles = "...")]
+• Dinamik navbar yapısı
+• Admin paneline Chart.js vb. grafik kütüphaneleri
+• ViewComponent veya PartialView ile modüler yapı
+• Otomatik test altyapısı (XUnit, NUnit)
+
+==========================
+✅ Neden Bu Projede Auth Sistemi Kurulmalı?
+==========================
+
+• Her yeni projede giriş/rol kontrolünü tekrar kurmak zaman kaybıdır
+• Claim/role bazlı yönlendirme altyapısı çoğu projede ihtiyaçtır
+• Giriş sonrası:
+    - Admin rolü için → Dashboard yönlendirmesi
+    - User rolü için → MainPage yönlendirmesi
+• Projeye şimdiden temel Auth servisleri (ClaimsPrincipal + Authorize) eklemek uzun vadede avantaj sağlar
+
+==========================
+📬 Geliştirici Notu
+==========================
+
+Bu proje, sıfırdan admin paneli veya kullanıcı arayüzü tasarlamak yerine bir temel yapı oluşturmak amacıyla geliştirildi.
+Layout yapısı, sayfa yönlendirmesi ve stil organizasyonu üzerinden her yeni projeye hızlıca başlanabilir.
+
+==========================
+🪪 Lisans
+==========================
+
+Bu proje kişisel ve ticari projelerde temel olarak kullanılmak üzere geliştirildi. Açık kaynaklı olarak dağıtılabilir.
