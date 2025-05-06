@@ -1,95 +1,69 @@
-📄 README - AdminPanel
-------------------------------------------------------------
+# AdminPanel – ASP.NET MVC Admin ve Kullanıcı Paneli
 
-🔧 Proje Hakkında
-Bu proje, ASP.NET Core MVC altyapısı kullanılarak sıfırdan oluşturulmuş, responsive, kullanıcı ve admin panelli bir web uygulamasıdır.
-Amaç: Her yeni projeye temel olacak bir admin panel altyapısı oluşturmak.
+Bu proje, ASP.NET Core MVC teknolojisi kullanılarak geliştirilmiş dinamik bir yönetim panelidir. Giriş/kayıt sistemi, rol bazlı yetkilendirme, admin ve kullanıcıya özel layout yapısı, profil fotoğrafı yönetimi ve modern bir dashboard tasarımı içerir.
 
-🧱 Temel Özellikler
-- ✅ Admin ve kullanıcı girişi
-- ✅ Cookie tabanlı kimlik doğrulama (Authentication)
-- ✅ Yetkilere göre yönlendirme (Admin → Dashboard, User → MainPage)
-- ✅ JSON dosyasından kullanıcı çekme
-- ✅ Gelişmiş hata kontrolü ve ViewBag ile görsel hata bildirimi
-- ✅ SweetAlert destekli popup mesaj yapısı (isteğe bağlı)
-- ✅ Layout yapısı:
-  - _Layout.cshtml → User Panel
-  - _DashboardLayout.cshtml → Admin Panel
+## 🚀 Özellikler
 
-📌 Ekstra Bilgiler
-- LoginResult modeli, başarılı ve başarısız girişleri ayırt etmenizi sağlar.
-- Servis katmanına tüm iş kuralları taşındı, controller yalnızca yönlendirici mantıktadır.
-- Proje modüler tasarlandığı için farklı projelerde temel olarak rahatlıkla kullanılabilir.
+- ✅ ASP.NET Identity ile kullanıcı yönetimi
+- ✅ Admin ve normal kullanıcı için ayrılmış layout yapısı
+- ✅ Kullanıcı kayıt ve giriş işlemleri (Login/Register)
+- ✅ Rol bazlı yetkilendirme (Admin/User)
+- ✅ Otomatik admin oluşturma (SeedData) 
+- ✅ Kullanıcı profil resmi gösterimi (varsayılanla birlikte)
+- ✅ Logout, erişim kontrolü ve oturum yönetimi
+- ✅ Dark/Light mode desteği (user paneli için) // Gelecek
+- ✅ Dashboard kısmı için özel responsive CSS yapısı
 
-Bu yapı iskelet olarak geliştirilmeye uygundur. Geliştirici login yönetimi, yetki seviyesi artırımı, database geçişi gibi işlemleri katmanlı olarak ekleyebilir.
-=======
-ASP.NET Core MVC - Genişletilebilir Admin Panel Template
 
-📌 Proje Amacı
-==========================
+## 🔧 Kurulum
 
-Bu proje, ASP.NET Core MVC ile geliştirilen, hem kullanıcı hem de yönetici paneli içeren, sade, responsive ve yeniden kullanılabilir bir temel projedir.
-Amaç, her yeni projeye başlarken tüm login, layout, yönlendirme gibi işlemleri sıfırdan yapmadan, hazır ve düzenli bir altyapı üzerinden hızla ilerlemektir.
-
-🧰 Kullanılan Teknolojiler
-==========================
-
-- ASP.NET Core MVC (.NET 6+)
-- Razor View Engine
-- Cookie Authentication (manual giriş sistemi)
-- Responsive tasarım (özel CSS ile)
-- İki farklı layout:
-    - _Layout.cshtml (Kullanıcı arayüzü)
-    - _DashboardLayout.cshtml (Yönetici paneli)
-
-🚀 Kurulum ve Kullanım
-==========================
-
-1. Projeyi klonlayın veya kopyalayın:
-   git clone [repo-link]
+1. Bu repoyu klonlayın:
+    ```bash
+    git clone https://github.com/erdokrmn/AdminPanel.git
+    ```
 
 2. Gerekli NuGet paketlerini yükleyin:
-   - Visual Studio: Tools > NuGet > Restore
-   - CLI: dotnet restore
+    - `Microsoft.AspNetCore.Identity.EntityFrameworkCore`
+    - `Microsoft.EntityFrameworkCore.SqlServer`
 
-3. Projeyi başlatın:
-   - Visual Studio: F5
-   - CLI: dotnet run
+3. Veritabanını oluşturun:
+    ```bash
+    Add-Migration InitialCreate
+    Update-Database
+    ```
 
-🔐 Giriş Bilgisi (Varsayılan)
-==========================
+4. `SeedData` ile varsayılan admin kullanıcı otomatik oluşturulacaktır:
+    ```
+    E-posta: admin@example.com
+    Şifre: Admin123!
+    ```
 
-Kullanıcı Adı: admin
-Şifre: 1234
+> **Not:** Şifreyi yayına almadan önce değiştirmeniz önerilir.
 
-Not: Bu sabit değerler AccountController içinde örnek olarak tanımlanmıştır. İsterseniz veritabanı bağlantısı ile değiştirebilirsiniz.
+## 🖼 Profil Resmi Mantığı
 
-🔧 Genişletme Rehberi
-==========================
+- Kullanıcının profil resmi varsa gösterilir
+- Yoksa: `wwwroot/images/default/user.png` kullanılır
+- Bu işlem `UserImageService` ile merkezi şekilde yapılır
 
-• Role bazlı yetkilendirme → [Authorize(Roles = "...")]
-• Dinamik navbar yapısı
-• Admin paneline Chart.js vb. grafik kütüphaneleri
-• ViewComponent veya PartialView ile modüler yapı
-• Otomatik test altyapısı (XUnit, NUnit)
+## 🌐 Giriş Sayfası Tasarımı
 
-✅ Neden Bu Projede Auth Sistemi Kurulmalı?
-==========================
+- Şık bir HTML/CSS login template entegre edilmiştir
+- Light/dark mode toggle özelliği desteklenmektedir
 
-• Her yeni projede giriş/rol kontrolünü tekrar kurmak zaman kaybıdır
-• Claim/role bazlı yönlendirme altyapısı çoğu projede ihtiyaçtır
-• Giriş sonrası:
-    - Admin rolü için → Dashboard yönlendirmesi
-    - User rolü için → MainPage yönlendirmesi
-• Projeye şimdiden temel Auth servisleri (ClaimsPrincipal + Authorize) eklemek uzun vadede avantaj sağlar
+## 🛡 Güvenlik
 
-📬 Geliştirici Notu
-==========================
+- ASP.NET Identity altyapısı
+- Cookie tabanlı kimlik doğrulama
+- `[Authorize]`, `[AllowAnonymous]` ve `[ValidateAntiForgeryToken]` kullanımı
+- Rol bazlı erişim ve yönlendirme
 
-Bu proje, sıfırdan admin paneli veya kullanıcı arayüzü tasarlamak yerine bir temel yapı oluşturmak amacıyla geliştirildi.
-Layout yapısı, sayfa yönlendirmesi ve stil organizasyonu üzerinden her yeni projeye hızlıca başlanabilir.
+## 🧑‍💻 Katkı
 
-🪪 Lisans
-==========================
+Katkıda bulunmak isterseniz, forku alın, geliştirin ve pull request gönderin.
 
-Bu proje kişisel ve ticari projelerde temel olarak kullanılmak üzere geliştirildi. Açık kaynaklı olarak dağıtılabilir.
+---
+
+© 2025 Erdinç Karaman – Tüm Hakları Saklıdır.
+
+
