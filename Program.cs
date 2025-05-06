@@ -1,25 +1,40 @@
-using AdminPanel.Services.IServices;
+using AdminPanel.Data;
+using AdminPanel.Models;
 using AdminPanel.Services;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.AspNetCore.Authentication.Cookies;
+using AdminPanel.Services.IServices;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // 1. MVC servislerini ekle
 builder.Services.AddControllersWithViews();
-builder.Services.AddScoped<IUserService, JsonUserService>();
-builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-    .AddCookie(options =>
-    {
-        options.LoginPath = "/Account/Login"; // Giriþ yapýlmadýysa yönlendirme
-        options.AccessDeniedPath = "/Account/AccessDenied"; // Yetki yoksa
-    });
+
+builder.Services.AddScoped<IUserImageService, UserImageService>();
+
+// 2. VeritabanÄ± baÄŸlantÄ±sÄ±
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// 3. Identity servislerini ekle
+builder.Services.AddIdentity<User, IdentityRole>()
+    .AddEntityFrameworkStores<AppDbContext>()
+    .AddDefaultTokenProviders();
+
+// 4. Cookie ayarlarÄ±
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = "/Auth/Login";
+    options.AccessDeniedPath = "/Auth/AccessDenied";
+    options.ExpireTimeSpan = TimeSpan.FromMinutes(30);
+});
+
+// 5. AuthService interface'ini ekle
+builder.Services.AddScoped<IAuthService, AuthService>();
 
 var app = builder.Build();
 
-// 2. Hata ayýklama için geliþtirme ortamý kontrolü
+// 6. Hata ayÄ±klama vs.
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
@@ -30,18 +45,26 @@ else
     app.UseHsts();
 }
 
-// 3. HTTPS ve statik dosya ayarlarý
+// 7. Middleware
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
-// 4. Routing ve (ileride) Authentication middleware'leri
 app.UseRouting();
-app.UseAuthentication(); // ileride giriþ sistemi eklediðimizde çalýþacak
+app.UseAuthentication();
 app.UseAuthorization();
 
-// 5. Default routing
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var userManager = services.GetRequiredService<UserManager<User>>();
+    var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
+    await SeedData.Initialize(userManager, roleManager);
+}
+
+// 8. VarsayÄ±lan rota
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Account}/{action=Login}/{id?}");
+    pattern: "{controller=Auth}/{action=Login}/{id?}");
+
+
 
 app.Run();

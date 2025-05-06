@@ -1,10 +1,10 @@
-﻿namespace AdminPanel.Models
+using Microsoft.AspNetCore.Identity;
+
+namespace AdminPanel.Models
 {
-    public class User
+    public class User :IdentityUser
     {
-        public Guid Id { get; set; }
-        public string UserName { get; set; }
-        public string PasswordHash { get; set; }
-        public string Role { get; set; }
+        public string? Name { get; set; }
+
     }
 }

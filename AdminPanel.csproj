@@ -7,14 +7,29 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\js\" />
-    <Folder Include="wwwroot\img\" />
+    <Compile Remove="wwwroot\img\**" />
+    <Compile Remove="wwwroot\js\**" />
+    <Content Remove="wwwroot\img\**" />
+    <Content Remove="wwwroot\js\**" />
+    <EmbeddedResource Remove="wwwroot\img\**" />
+    <EmbeddedResource Remove="wwwroot\js\**" />
+    <None Remove="wwwroot\img\**" />
+    <None Remove="wwwroot\js\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\css\login.css" />
-    <None Include="wwwroot\css\main.css" />
-    <None Include="wwwroot\css\sidebar.css" />
+    <Folder Include="wwwroot\login\js\" />
+    <Folder Include="wwwroot\login\images\" />
+    <Folder Include="wwwroot\login\fonts\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.15">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
 </Project>

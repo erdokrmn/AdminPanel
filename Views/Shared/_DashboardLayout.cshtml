@@ -1,41 +1,44 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+﻿@inject AdminPanel.Services.IServices.IUserImageService ImageService
+@{
+    var profileImage = ImageService.GetProfileImageUrl(User.FindFirst("ProfileImagePath")?.Value);
+}
+
+<!DOCTYPE html>
+<html lang="tr">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Admin Panel</title>
 
-    <!-- Dashboard'a özel CSS -->
-    <link rel="stylesheet" href="@Url.Content("~/css/dashboard.css")" />
-
+    <link rel="stylesheet" href="~/Dashboard/dashboard.css" />
     @RenderSection("Styles", required: false)
 </head>
 <body>
-    <div class="container">
+    <div class="dashboard-container">
+        <!-- Sidebar -->
         <aside class="sidebar">
-            <h2 class="logo">Admin.</h2>
-            <nav class="nav">
-                <a asp-controller="Dashboard" asp-action="Index">Dashboard</a>
-                <a asp-controller="Dashboard" asp-action="Tickets">Tickets</a>
-                <a asp-controller="Dashboard" asp-action="Users">Users</a>
-                <a asp-controller="Dashboard" asp-action="Settings">Settings</a>
+            <div class="logo">Admin Panel</div>
+            <nav class="menu">
+                <a asp-controller="Dashboard" asp-action="Index">Ana Sayfa</a>
+                <a asp-controller="Dashboard" asp-action="Users">Kullanıcılar</a>
+                <a asp-controller="Dashboard" asp-action="Settings">Ayarlar</a>
             </nav>
         </aside>
 
-        <main class="main-content">
+        <!-- Main Area -->
+        <main class="main">
+            <!-- Topbar -->
             <header class="topbar">
-                <div class="topbar-left">
-                    <h1>@ViewData["Title"]</h1>
-                </div>
-                
+                <h1 class="page-title">@ViewData["Title"]</h1>
+
                 <div class="topbar-right">
-                    <div class="profile">
-                        <img src="https://via.placeholder.com/40" alt="Profile" />
-                        <span>Admin</span>
+                    <div class="profile-info">
+                        <img src="@profileImage" alt="Profil" class="profile-pic" />
+                        <span class="username">@User.Identity?.Name</span>
                     </div>
 
-                    <form asp-action="Logout" asp-controller="Account" method="post" class="logout-form">
-                        <button type="submit" class="logout-button">Çıkış Yap</button>
+                    <form asp-controller="Auth" asp-action="Logout" method="post" class="logout-form">
+                        <button type="submit" class="logout-btn">Çıkış</button>
                     </form>
                 </div>
             </header>
