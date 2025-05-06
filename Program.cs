@@ -11,6 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<IUserImageService, UserImageService>();
+builder.Services.AddScoped<IEmailSender, SmtpEmailSender>();
 
 // 2. Veritabanı bağlantısı
 builder.Services.AddDbContext<AppDbContext>(options =>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "u4CZpEUVcpN9yVKLznhInNO4Cz1lZw4QFz5zmtIhpiY=",
+  "Hash": "Y8D08FI2Unb9AbfYuJFyxxzGphizUIh2Ot9x/mvZ42Q=",
   "Source": "AdminPanel",
   "BasePath": "_content/AdminPanel",
   "Mode": "Default",
@@ -16,6 +16,27 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\css\\user\\user.css",
+      "SourceId": "AdminPanel",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\",
+      "BasePath": "_content/AdminPanel",
+      "RelativePath": "css/user/user#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bf7gs2af7f",
+      "Integrity": "l82dFNVxsFMki2Gy/Nz+qlxeywh4FQ3oQGLDSahTs24=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\user\\user.css"
+    },
     {
       "Identity": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\Dashboard\\dashboard.css",
       "SourceId": "AdminPanel",
@@ -1719,6 +1740,88 @@
     }
   ],
   "Endpoints": [
+    {
+      "Route": "css/user/user.bf7gs2af7f.css",
+      "AssetFile": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\css\\user\\user.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1269"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l82dFNVxsFMki2Gy/Nz+qlxeywh4FQ3oQGLDSahTs24=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 12:35:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bf7gs2af7f"
+        },
+        {
+          "Name": "label",
+          "Value": "css/user/user.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-l82dFNVxsFMki2Gy/Nz+qlxeywh4FQ3oQGLDSahTs24="
+        }
+      ]
+    },
+    {
+      "Route": "css/user/user.css",
+      "AssetFile": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\css\\user\\user.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1269"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l82dFNVxsFMki2Gy/Nz+qlxeywh4FQ3oQGLDSahTs24=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 12:35:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-l82dFNVxsFMki2Gy/Nz+qlxeywh4FQ3oQGLDSahTs24="
+        }
+      ]
+    },
     {
       "Route": "Dashboard/dashboard.css",
       "AssetFile": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\Dashboard\\dashboard.css",

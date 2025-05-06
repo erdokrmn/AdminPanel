@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Dashboard\\dashboard.css"
     },
     {
+      "Id": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\css\\user\\user.css",
+      "PackagePath": "staticwebassets\\css\\user\\user.css"
+    },
+    {
       "Id": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\images\\default\\user.png",
       "PackagePath": "staticwebassets\\images\\default\\user.png"
     },

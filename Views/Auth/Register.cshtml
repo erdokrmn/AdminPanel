@@ -29,6 +29,9 @@
                 <form asp-action="Register" method="post" class="login100-form validate-form">
                     <span class="login100-form-title p-b-33">Kayıt Ol</span>
 
+                    <!-- Genel Hatalar -->
+                    <div asp-validation-summary="All" class="text-danger mb-3"></div>
+
                     <div class="wrap-input100 validate-input">
                         <input asp-for="UserName" class="input100" placeholder="Kullanıcı Adı" />
                         <span asp-validation-for="UserName" class="text-danger"></span>

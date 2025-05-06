@@ -85,6 +85,88 @@
       ]
     },
     {
+      "Route": "css/user/user.bf7gs2af7f.css",
+      "AssetFile": "css/user/user.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1269"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l82dFNVxsFMki2Gy/Nz+qlxeywh4FQ3oQGLDSahTs24=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 12:35:56 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bf7gs2af7f"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-l82dFNVxsFMki2Gy/Nz+qlxeywh4FQ3oQGLDSahTs24="
+        },
+        {
+          "Name": "label",
+          "Value": "css/user/user.css"
+        }
+      ]
+    },
+    {
+      "Route": "css/user/user.css",
+      "AssetFile": "css/user/user.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1269"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l82dFNVxsFMki2Gy/Nz+qlxeywh4FQ3oQGLDSahTs24=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 12:35:56 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-l82dFNVxsFMki2Gy/Nz+qlxeywh4FQ3oQGLDSahTs24="
+        }
+      ]
+    },
+    {
       "Route": "images/default/user.izqevf65ba.png",
       "AssetFile": "images/default/user.png",
       "Selectors": [],

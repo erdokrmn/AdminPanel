@@ -1,0 +1,27 @@
+﻿@{
+    var email = ViewBag.Email as string;
+}
+<script>
+    const checkInterval = 5000; // 5 saniyede bir kontrol et
+    const email = "@email";
+
+    setInterval(() => {
+        fetch(`/Auth/CheckEmailConfirmed?email=${email}`)
+            .then(response => response.json())
+            .then(data => {
+                if (data.success && data.confirmed) {
+                    window.location.href = '/Auth/Login';
+                }
+            });
+    }, checkInterval);
+</script>
+
+
+<div class="container mt-5 text-center">
+    <h2>E-Posta Doğrulama Bekleniyor</h2>
+    <p><strong>@email</strong> adresine bir doğrulama bağlantısı gönderildi.</p>
+    <p>Lütfen e-posta kutunuzu kontrol edin ve bağlantıya tıklayın.</p>
+    <p>Doğrulama gelmediyse <a asp-action="ResendConfirmation" asp-route-email="@email">tekrar gönder</a></p>
+</div>
+
+
