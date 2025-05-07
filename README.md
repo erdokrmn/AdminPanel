@@ -15,14 +15,14 @@ Bu proje, ASP.NET Core MVC teknolojisi kullanılarak geliştirilmiş dinamik bir
 ✅ Şifre sıfırlama sistemi (e-posta üzerinden)  
 ✅ Kullanıcı profil güncelleme ekranı (adı, e-posta, görsel)  
 ✅ Kullanıcı aktivite loglama (veritabanında tutulur) 
-✅ Otomatik hata loglama sistemi (exception middleware ile)
-   - Oluşan hatalar kullanıcı ve tarayıcı bilgileriyle birlikte veritabanına kaydedilir
-   - Admin panelde DataTables tabanlı arayüzle listelenebilir
 ✅ Aktivite logları admin panelde listelenebilir (DataTables ile)  
 ✅ Logout, erişim kontrolü ve oturum yönetimi  
 ✅ Modern responsive dashboard arayüzü  
 ✅ Light/Dark mode desteği (🌓 Toggle sistemi ile)  
 ✅ Sidebar aç/kapa özelliği  
+✅ Otomatik hata loglama sistemi (exception middleware ile)
+   - Oluşan hatalar kullanıcı ve tarayıcı bilgileriyle birlikte veritabanına kaydedilir
+   - Admin panelde DataTables tabanlı arayüzle listelenebilir
 
 
 ## 🔧 Kurulum
