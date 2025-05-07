@@ -1,6 +1,8 @@
-wwwroot\css\user\user.css
+wwwroot\css\style.css
+wwwroot\css\users\user.css
 wwwroot\Dashboard\dashboard.css
 wwwroot\images\default\user.png
+wwwroot\images\users\user.png
 wwwroot\login\css\main.css
 wwwroot\login\css\util.css
 wwwroot\login\fonts\font-awesome-4.7.0\css\font-awesome.css
@@ -80,3 +82,4 @@ wwwroot\login\fonts\poppins\Poppins-ThinItalic.ttf
 wwwroot\login\images\icons\favicon.ico
 wwwroot\login\images\img-01.png
 wwwroot\login\js\main.js
+wwwroot\uploads\profile\b35dc71d-1c4f-4f47-808e-012e4fc816ea.jpeg

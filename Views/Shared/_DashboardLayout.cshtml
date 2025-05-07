@@ -1,6 +1,6 @@
 ﻿@inject AdminPanel.Services.IServices.IUserImageService ImageService
 @{
-    var profileImage = ImageService.GetProfileImageUrl(User.FindFirst("ProfileImagePath")?.Value);
+    var profileImage = await ImageService.GetProfileImageUrlAsync();
 }
 
 <!DOCTYPE html>
@@ -20,7 +20,7 @@
             <div class="logo">Admin Panel</div>
             <nav class="menu">
                 <a asp-controller="Dashboard" asp-action="Index">Ana Sayfa</a>
-                <a asp-controller="Dashboard" asp-action="Users">Kullanıcılar</a>
+                <a asp-controller="Dashboard" asp-action="ActivityLogs">Kullanıcı Aktiviteleri</a>
                 <a asp-controller="Dashboard" asp-action="Settings">Ayarlar</a>
             </nav>
         </aside>

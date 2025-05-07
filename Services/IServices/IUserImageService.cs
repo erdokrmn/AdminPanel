@@ -2,6 +2,7 @@
 {
     public interface IUserImageService
     {
-        string GetProfileImageUrl(string? imagePath);
+        Task<string> GetProfileImageUrlAsync();
     }
+
 }

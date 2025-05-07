@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Y8D08FI2Unb9AbfYuJFyxxzGphizUIh2Ot9x/mvZ42Q=",
+  "Hash": "RcVIMVIB2WJH51uRYmC1JDGIzdPvyH2DYv9MVXQuX6Y=",
   "Source": "AdminPanel",
   "BasePath": "_content/AdminPanel",
   "Mode": "Default",
@@ -17,12 +17,33 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\css\\user\\user.css",
+      "Identity": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\css\\style.css",
       "SourceId": "AdminPanel",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\",
       "BasePath": "_content/AdminPanel",
-      "RelativePath": "css/user/user#[.{fingerprint}]?.css",
+      "RelativePath": "css/style#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jsh82z670n",
+      "Integrity": "7SU4dzjITFvck50N+4g/kWE8WFBTB0rncbLHZ4syP1Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
+    },
+    {
+      "Identity": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\css\\users\\user.css",
+      "SourceId": "AdminPanel",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\",
+      "BasePath": "_content/AdminPanel",
+      "RelativePath": "css/users/user#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -35,7 +56,7 @@
       "Integrity": "l82dFNVxsFMki2Gy/Nz+qlxeywh4FQ3oQGLDSahTs24=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\user\\user.css"
+      "OriginalItemSpec": "wwwroot\\css\\users\\user.css"
     },
     {
       "Identity": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\Dashboard\\dashboard.css",
@@ -78,6 +99,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\default\\user.png"
+    },
+    {
+      "Identity": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\images\\users\\user.png",
+      "SourceId": "AdminPanel",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\",
+      "BasePath": "_content/AdminPanel",
+      "RelativePath": "images/users/user#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "izqevf65ba",
+      "Integrity": "4sQ2kSisIgW89d3uU7yqeCpYl7toB9M92jdzLjyNeyU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\users\\user.png"
     },
     {
       "Identity": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\login\\css\\main.css",
@@ -1737,12 +1779,115 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\login\\js\\main.js"
+    },
+    {
+      "Identity": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\uploads\\profile\\b35dc71d-1c4f-4f47-808e-012e4fc816ea.jpeg",
+      "SourceId": "AdminPanel",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\",
+      "BasePath": "_content/AdminPanel",
+      "RelativePath": "uploads/profile/b35dc71d-1c4f-4f47-808e-012e4fc816ea#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "195mimyzhe",
+      "Integrity": "FQ7Dl7AjBpkbZ9AUIa02I998qcVk8ECwu1iI/KZTkz4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\profile\\b35dc71d-1c4f-4f47-808e-012e4fc816ea.jpeg"
     }
   ],
   "Endpoints": [
     {
-      "Route": "css/user/user.bf7gs2af7f.css",
-      "AssetFile": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\css\\user\\user.css",
+      "Route": "css/style.css",
+      "AssetFile": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\css\\style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2867"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7SU4dzjITFvck50N+4g/kWE8WFBTB0rncbLHZ4syP1Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 07:52:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7SU4dzjITFvck50N+4g/kWE8WFBTB0rncbLHZ4syP1Y="
+        }
+      ]
+    },
+    {
+      "Route": "css/style.jsh82z670n.css",
+      "AssetFile": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\css\\style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2867"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7SU4dzjITFvck50N+4g/kWE8WFBTB0rncbLHZ4syP1Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 07:52:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jsh82z670n"
+        },
+        {
+          "Name": "label",
+          "Value": "css/style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7SU4dzjITFvck50N+4g/kWE8WFBTB0rncbLHZ4syP1Y="
+        }
+      ]
+    },
+    {
+      "Route": "css/users/user.bf7gs2af7f.css",
+      "AssetFile": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\css\\users\\user.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1777,7 +1922,7 @@
         },
         {
           "Name": "label",
-          "Value": "css/user/user.css"
+          "Value": "css/users/user.css"
         },
         {
           "Name": "integrity",
@@ -1786,8 +1931,8 @@
       ]
     },
     {
-      "Route": "css/user/user.css",
-      "AssetFile": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\css\\user\\user.css",
+      "Route": "css/users/user.css",
+      "AssetFile": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\css\\users\\user.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1952,6 +2097,88 @@
     {
       "Route": "images/default/user.png",
       "AssetFile": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\images\\default\\user.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2632"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4sQ2kSisIgW89d3uU7yqeCpYl7toB9M92jdzLjyNeyU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 12:14:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4sQ2kSisIgW89d3uU7yqeCpYl7toB9M92jdzLjyNeyU="
+        }
+      ]
+    },
+    {
+      "Route": "images/users/user.izqevf65ba.png",
+      "AssetFile": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\images\\users\\user.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2632"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4sQ2kSisIgW89d3uU7yqeCpYl7toB9M92jdzLjyNeyU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 12:14:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "izqevf65ba"
+        },
+        {
+          "Name": "label",
+          "Value": "images/users/user.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4sQ2kSisIgW89d3uU7yqeCpYl7toB9M92jdzLjyNeyU="
+        }
+      ]
+    },
+    {
+      "Route": "images/users/user.png",
+      "AssetFile": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\images\\users\\user.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8461,6 +8688,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-IR5RT/BjyL/UsnPpG7derjiXZ5amARjrG2rbG60hWq4="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/profile/b35dc71d-1c4f-4f47-808e-012e4fc816ea.195mimyzhe.jpeg",
+      "AssetFile": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\uploads\\profile\\b35dc71d-1c4f-4f47-808e-012e4fc816ea.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "169532"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FQ7Dl7AjBpkbZ9AUIa02I998qcVk8ECwu1iI/KZTkz4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 08:48:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "195mimyzhe"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/profile/b35dc71d-1c4f-4f47-808e-012e4fc816ea.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FQ7Dl7AjBpkbZ9AUIa02I998qcVk8ECwu1iI/KZTkz4="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/profile/b35dc71d-1c4f-4f47-808e-012e4fc816ea.jpeg",
+      "AssetFile": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\uploads\\profile\\b35dc71d-1c4f-4f47-808e-012e4fc816ea.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "169532"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FQ7Dl7AjBpkbZ9AUIa02I998qcVk8ECwu1iI/KZTkz4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 08:48:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FQ7Dl7AjBpkbZ9AUIa02I998qcVk8ECwu1iI/KZTkz4="
         }
       ]
     }

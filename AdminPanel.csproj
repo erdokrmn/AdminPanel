@@ -21,6 +21,7 @@
     <Folder Include="wwwroot\login\js\" />
     <Folder Include="wwwroot\login\images\" />
     <Folder Include="wwwroot\login\fonts\" />
+    <Folder Include="wwwroot\uploads\profile\" />
   </ItemGroup>
 
   <ItemGroup>

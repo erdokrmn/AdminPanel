@@ -1,6 +1,6 @@
 ﻿@inject AdminPanel.Services.IServices.IUserImageService ImageService
 @{
-    var profileImage = ImageService.GetProfileImageUrl(User.FindFirst("ProfileImagePath")?.Value);
+    var profileImage = await ImageService.GetProfileImageUrlAsync();
 }
 
 <!DOCTYPE html>
@@ -10,10 +10,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Kullanıcı Paneli</title>
 
-    <link rel="stylesheet" href="~/css/user/user.css" />
+    <!-- Gerekli Font, CSS ve İkonlar -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Ortak Kullanıcı Paneli CSS -->
+    <link rel="stylesheet" href="~/css/users/user.css" />
+
     @RenderSection("Styles", required: false)
 </head>
 <body>
+    <!-- HEADER -->
     <header class="user-header">
         <div class="container">
             <div class="user-header-left">
@@ -25,7 +32,8 @@
                     <img src="@profileImage" alt="Profil" class="profile-pic" />
                     <span class="username">@User.Identity?.Name</span>
                 </div>
-                <a asp-controller="Profile" asp-action="Index" class="profile-link">Profil</a>
+                <a asp-controller="Home" asp-action="Index" class="profile-link">Anasayfa</a>
+                <a asp-controller="User" asp-action="Profile" class="profile-link">Profil</a>
                 <form asp-controller="Auth" asp-action="Logout" method="post" class="logout-form">
                     <button type="submit" class="logout-btn">Çıkış</button>
                 </form>
@@ -33,10 +41,12 @@
         </div>
     </header>
 
+    <!-- ANA GÖVDE -->
     <main class="user-main container">
         @RenderBody()
     </main>
 
+    <!-- FOOTER -->
     <footer class="user-footer">
         <div class="container">
             <p>© @DateTime.Now.Year Tüm Hakları Saklıdır.</p>

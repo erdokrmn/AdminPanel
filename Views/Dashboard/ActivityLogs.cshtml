@@ -1,0 +1,53 @@
+﻿@model List<ActivityLogViewModel>
+
+@{
+    ViewData["Title"] = "Kullanıcı Aktivite Logları";
+    Layout = "~/Views/Shared/_DashboardLayout.cshtml"; // Layout dosyana göre düzenleyebilirsin
+}
+
+<h2 class="mb-4">Kullanıcı Aktivite Logları</h2>
+
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/plug-ins/1.13.4/i18n/tr.json"></script>
+
+<table id="activityLogTable" class="display table table-bordered">
+    <thead>
+        <tr>
+            <th>Kullanıcı Adı</th>
+            <th>Ad Soyad</th>
+            <th>İşlem</th>
+            <th>Tarih</th>
+            <th>IP Adresi</th>
+            <th>Tarayıcı</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var log in Model)
+        {
+            <tr>
+                <td>@log.UserName</td>
+                <td>@log.FullName</td>
+                <td>@log.Action</td>
+                <td>@log.Timestamp.ToLocalTime().ToString("g")</td>
+                <td>@log.IpAddress</td>
+                <td>@log.BrowserInfo</td>
+            </tr>
+        }
+    </tbody>
+
+
+</table>
+
+<script>
+    $(document).ready(function () {
+        $('#activityLogTable').DataTable({
+            pageLength: 10,
+            order: [[2, 'desc']],
+            language: {
+                url: "//cdn.datatables.net/plug-ins/1.13.4/i18n/tr.json"
+            }
+        });
+    });
+</script>

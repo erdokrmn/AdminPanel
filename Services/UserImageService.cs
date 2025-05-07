@@ -1,17 +1,34 @@
-﻿using AdminPanel.Services.IServices;
+﻿using AdminPanel.Models;
+using AdminPanel.Services.IServices;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
+using System.Security.Claims;
 
-namespace AdminPanel.Services
+public class UserImageService : IUserImageService
 {
-    public class UserImageService : IUserImageService
+    private const string DefaultImagePath = "/images/default/user.png";
+
+    private readonly UserManager<User> _userManager;
+    private readonly IHttpContextAccessor _httpContextAccessor;
+
+    public UserImageService(UserManager<User> userManager, IHttpContextAccessor httpContextAccessor)
     {
-        private const string DefaultImagePath = "/images/default/user.png";
+        _userManager = userManager;
+        _httpContextAccessor = httpContextAccessor;
+    }
 
-        public string GetProfileImageUrl(string? imagePath)
-        {
-            if (string.IsNullOrEmpty(imagePath))
-                return DefaultImagePath;
+    public async Task<string> GetProfileImageUrlAsync()
+    {
+        var httpContext = _httpContextAccessor.HttpContext;
+        if (httpContext == null || !httpContext.User.Identity?.IsAuthenticated == true)
+            return DefaultImagePath;
 
-            return imagePath.StartsWith("/") ? imagePath : "/" + imagePath;
-        }
+        var user = await _userManager.GetUserAsync(httpContext.User);
+
+        if (user == null || string.IsNullOrEmpty(user.ProfileImagePath))
+            return DefaultImagePath;
+
+        return "/uploads/profile/" + user.ProfileImagePath;
+
     }
 }

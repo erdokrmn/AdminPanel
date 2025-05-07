@@ -1,4 +1,5 @@
 ﻿using AdminPanel.Models;
+using AdminPanel.Models.Logs;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -9,6 +10,6 @@ namespace AdminPanel.Data
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
         }
-
+        public DbSet<ActivityLog> ActivityLogs { get; set; }
     }
 }
