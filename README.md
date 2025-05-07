@@ -1,18 +1,24 @@
 # AdminPanel – ASP.NET MVC Admin ve Kullanıcı Paneli
 
-Bu proje, ASP.NET Core MVC teknolojisi kullanılarak geliştirilmiş dinamik bir yönetim panelidir. Giriş/kayıt sistemi, rol bazlı yetkilendirme, admin ve kullanıcıya özel layout yapısı, profil fotoğrafı yönetimi ve modern bir dashboard tasarımı içerir.
+Bu proje, ASP.NET Core MVC teknolojisi kullanılarak geliştirilmiş dinamik bir yönetim panelidir. Giriş/kayıt sistemi, rol bazlı yetkilendirme, kullanıcı profil yönetimi, aktivite loglama ve responsive admin arayüzü içerir.
+
+---
 
 ## 🚀 Özellikler
 
-- ✅ ASP.NET Identity ile kullanıcı yönetimi
-- ✅ Admin ve normal kullanıcı için ayrılmış layout yapısı
-- ✅ Kullanıcı kayıt ve giriş işlemleri (Login/Register)
-- ✅ Rol bazlı yetkilendirme (Admin/User)
-- ✅ Otomatik admin oluşturma (SeedData) 
-- ✅ Kullanıcı profil resmi gösterimi (varsayılanla birlikte)
-- ✅ Logout, erişim kontrolü ve oturum yönetimi
-- ✅ Dark/Light mode desteği (user paneli için) // Gelecek
-- ✅ Dashboard kısmı için özel responsive CSS yapısı
+✅ ASP.NET Identity ile kullanıcı ve rol yönetimi  
+✅ Admin ve normal kullanıcı için ayrılmış layout yapısı  
+✅ Giriş / Kayıt işlemleri (Login / Register)  
+✅ Rol bazlı yetkilendirme (Admin / User)  
+✅ Otomatik admin oluşturma (SeedData)  
+✅ Kullanıcı profil resmi yönetimi  
+✅ Şifre sıfırlama sistemi (e-posta üzerinden)  
+✅ Kullanıcı profil güncelleme ekranı (adı, e-posta, görsel)  
+✅ Kullanıcı aktivite loglama (veritabanında tutulur)  
+✅ Aktivite logları admin panelde listelenebilir (DataTables ile)  
+✅ Logout, erişim kontrolü ve oturum yönetimi  
+✅ Modern responsive dashboard arayüzü  
+✅ (Gelecek) Dark/Light mode desteği  
 
 
 ## 🔧 Kurulum
