@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RcVIMVIB2WJH51uRYmC1JDGIzdPvyH2DYv9MVXQuX6Y=",
+  "Hash": "+HIYCHlH0hmOTCwDi9nhU+Wkp/Z8NKDawpQOkwMapB8=",
   "Source": "AdminPanel",
   "BasePath": "_content/AdminPanel",
   "Mode": "Default",
@@ -120,6 +120,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\users\\user.png"
+    },
+    {
+      "Identity": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\js\\datatables-init.js",
+      "SourceId": "AdminPanel",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\",
+      "BasePath": "_content/AdminPanel",
+      "RelativePath": "js/datatables-init#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mk4g4pigbf",
+      "Integrity": "2tz57mhcNxyYJdVLfhHE+KxS7r3AiaitDgN/qkLZJbA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\datatables-init.js"
     },
     {
       "Identity": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\login\\css\\main.css",
@@ -2210,6 +2231,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-4sQ2kSisIgW89d3uU7yqeCpYl7toB9M92jdzLjyNeyU="
+        }
+      ]
+    },
+    {
+      "Route": "js/datatables-init.js",
+      "AssetFile": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\js\\datatables-init.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "239"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2tz57mhcNxyYJdVLfhHE+KxS7r3AiaitDgN/qkLZJbA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 10:09:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2tz57mhcNxyYJdVLfhHE+KxS7r3AiaitDgN/qkLZJbA="
+        }
+      ]
+    },
+    {
+      "Route": "js/datatables-init.mk4g4pigbf.js",
+      "AssetFile": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\js\\datatables-init.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "239"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2tz57mhcNxyYJdVLfhHE+KxS7r3AiaitDgN/qkLZJbA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 10:09:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mk4g4pigbf"
+        },
+        {
+          "Name": "label",
+          "Value": "js/datatables-init.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2tz57mhcNxyYJdVLfhHE+KxS7r3AiaitDgN/qkLZJbA="
         }
       ]
     },

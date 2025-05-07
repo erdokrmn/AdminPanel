@@ -413,6 +413,88 @@
       ]
     },
     {
+      "Route": "js/datatables-init.js",
+      "AssetFile": "js/datatables-init.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "239"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2tz57mhcNxyYJdVLfhHE+KxS7r3AiaitDgN/qkLZJbA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 10:09:53 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2tz57mhcNxyYJdVLfhHE+KxS7r3AiaitDgN/qkLZJbA="
+        }
+      ]
+    },
+    {
+      "Route": "js/datatables-init.mk4g4pigbf.js",
+      "AssetFile": "js/datatables-init.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "239"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2tz57mhcNxyYJdVLfhHE+KxS7r3AiaitDgN/qkLZJbA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 10:09:53 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mk4g4pigbf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2tz57mhcNxyYJdVLfhHE+KxS7r3AiaitDgN/qkLZJbA="
+        },
+        {
+          "Name": "label",
+          "Value": "js/datatables-init.js"
+        }
+      ]
+    },
+    {
       "Route": "login/css/main.0koamni527.css",
       "AssetFile": "login/css/main.css",
       "Selectors": [],

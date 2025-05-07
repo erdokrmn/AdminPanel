@@ -11,5 +11,6 @@ namespace AdminPanel.Data
         {
         }
         public DbSet<ActivityLog> ActivityLogs { get; set; }
+        public DbSet<ErrorLog> ErrorLogs { get; set; }
     }
 }

@@ -15,6 +15,31 @@ namespace AdminPanel.Controllers
         {
             _context = context;
         }
+        public async Task<IActionResult> ErrorLogs()
+        {
+            var logs = await _context.ErrorLogs
+                .OrderByDescending(e => e.Timestamp)
+                .Join(
+                    _context.Users,
+                    error => error.UserId,
+                    user => user.Id,
+                    (error, user) => new ErrorLogViewModel
+                    {
+                        Message = error.Message,
+                        StackTrace = error.StackTrace,
+                        Path = error.Path,
+                        UserId = error.UserId,
+                        UserName = user.UserName,
+                        FullName = user.Name,
+                        BrowserInfo = error.BrowserInfo,
+                        Timestamp = error.Timestamp
+                    }
+                )
+                .ToListAsync();
+
+            return View(logs);
+        }
+
 
         public async Task<IActionResult> ActivityLogs()
         {

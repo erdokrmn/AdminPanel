@@ -8,13 +8,9 @@
 
   <ItemGroup>
     <Compile Remove="wwwroot\img\**" />
-    <Compile Remove="wwwroot\js\**" />
     <Content Remove="wwwroot\img\**" />
-    <Content Remove="wwwroot\js\**" />
     <EmbeddedResource Remove="wwwroot\img\**" />
-    <EmbeddedResource Remove="wwwroot\js\**" />
     <None Remove="wwwroot\img\**" />
-    <None Remove="wwwroot\js\**" />
   </ItemGroup>
 
   <ItemGroup>

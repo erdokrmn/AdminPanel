@@ -10,6 +10,10 @@ var builder = WebApplication.CreateBuilder(args);
 // 1. MVC servislerini ekle
 builder.Services.AddControllersWithViews();
 
+
+builder.Services.AddScoped<IErrorLogService, ErrorLogService>();
+
+
 builder.Services.AddScoped<IUserImageService, UserImageService>();
 builder.Services.AddScoped<IActivityLogService, ActivityLogService>();
 builder.Services.AddHttpContextAccessor();
@@ -36,6 +40,8 @@ builder.Services.ConfigureApplicationCookie(options =>
 builder.Services.AddScoped<IAuthService, AuthService>();
 
 var app = builder.Build();
+
+app.UseMiddleware<ExceptionLoggingMiddleware>();
 
 // 6. Hata ayıklama vs.
 if (app.Environment.IsDevelopment())

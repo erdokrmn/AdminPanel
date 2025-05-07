@@ -3,6 +3,7 @@ wwwroot\css\users\user.css
 wwwroot\Dashboard\dashboard.css
 wwwroot\images\default\user.png
 wwwroot\images\users\user.png
+wwwroot\js\datatables-init.js
 wwwroot\login\css\main.css
 wwwroot\login\css\util.css
 wwwroot\login\fonts\font-awesome-4.7.0\css\font-awesome.css

@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\images\\users\\user.png"
     },
     {
+      "Id": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\js\\datatables-init.js",
+      "PackagePath": "staticwebassets\\js\\datatables-init.js"
+    },
+    {
       "Id": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\login\\css\\main.css",
       "PackagePath": "staticwebassets\\login\\css\\main.css"
     },
