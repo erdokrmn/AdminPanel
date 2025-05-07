@@ -1,58 +1,100 @@
 ﻿@inject AdminPanel.Services.IServices.IUserImageService ImageService
 @{
+    Layout = null;
     var profileImage = await ImageService.GetProfileImageUrlAsync();
 }
 
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Kullanıcı Paneli</title>
 
-    <!-- Gerekli Font, CSS ve İkonlar -->
+   @*  <button id="themeToggle" class="toggle-theme-btn">🌓</button> *@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
-    <!-- Ortak Kullanıcı Paneli CSS -->
-    <link rel="stylesheet" href="~/css/users/user.css" />
+    <link rel="stylesheet" href="~/css/ui-theme.css" />
 
     @RenderSection("Styles", required: false)
 </head>
-<body>
-    <!-- HEADER -->
-    <header class="user-header">
-        <div class="container">
-            <div class="user-header-left">
-                <h1 class="logo">Kullanıcı Paneli</h1>
+<body class="light">
+
+    <!-- Tema geçiş butonu (tam sağ üst köşe) -->
+   
+
+    <div class="main-layout">
+        <!-- HEADER -->
+
+        <header class="header">
+            <div class="header-left">
+                <button class="btn btn-outline sidebar-toggle" onclick="toggleSidebar()">☰</button>
+               
+                <span class="panel-title" id="panelTitle">USER PANEL</span>
             </div>
 
-            <div class="user-header-right">
-                <div class="user-profile">
+            <div class="header-right">
+                <div class="user-info">
+                    
                     <img src="@profileImage" alt="Profil" class="profile-pic" />
                     <span class="username">@User.Identity?.Name</span>
+                    <a asp-controller="User" asp-action="Profile">Profil</a>
+                    <form asp-controller="Auth" asp-action="Logout" method="post" style="display:inline;">
+                        <button type="submit" class="btn btn-danger">Çıkış</button>
+                    </form>
+                    
                 </div>
-                <a asp-controller="Home" asp-action="Index" class="profile-link">Anasayfa</a>
-                <a asp-controller="User" asp-action="Profile" class="profile-link">Profil</a>
-                <form asp-controller="Auth" asp-action="Logout" method="post" class="logout-form">
-                    <button type="submit" class="logout-btn">Çıkış</button>
-                </form>
+                <div>
+                    <button id="themeToggle" class="toggle-theme-btn">🌓</button>
+                </div>
             </div>
+        </header>
+
+        <!-- ANA KISIM -->
+        <div class="main-content">
+            <nav class="sidebar" id="sidebar">
+                <a asp-controller="Home" asp-action="Index">Anasayfa</a>
+                <a asp-controller="User" asp-action="Profile">Profil Bilgilerim</a>
+            </nav>
+            <main class="content-area" id="contentArea">
+                @RenderBody()
+            </main>
         </div>
-    </header>
 
-    <!-- ANA GÖVDE -->
-    <main class="user-main container">
-        @RenderBody()
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="user-footer">
-        <div class="container">
+        <!-- FOOTER -->
+        <footer class="footer">
             <p>© @DateTime.Now.Year Tüm Hakları Saklıdır.</p>
-        </div>
-    </footer>
+        </footer>
+    </div>
+
+    <script>
+        const btn = document.getElementById('themeToggle');
+        const body = document.body;
+        const sidebar = document.getElementById('sidebar');
+        const content = document.getElementById('contentArea');
+        const panelTitle = document.getElementById('panelTitle');
+
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            body.classList.remove('light', 'dark');
+            body.classList.add(savedTheme);
+        }
+
+        btn.addEventListener('click', () => {
+            body.classList.toggle('dark');
+            body.classList.toggle('light');
+            localStorage.setItem('theme', body.classList.contains('dark') ? 'dark' : 'light');
+        });
+
+        function toggleSidebar() {
+            sidebar.classList.toggle('collapsed');
+            content.classList.toggle('expanded');
+            panelTitle.style.display = sidebar.classList.contains('collapsed') ? 'none' : 'inline-block';
+        }
+    </script>
 
     @RenderSection("Scripts", required: false)
 </body>
+
 </html>

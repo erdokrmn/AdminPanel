@@ -5,39 +5,43 @@
     Layout = "~/Views/Shared/_UserLayout.cshtml";
 }
 
-<h2 class="mb-4">Profil Bilgilerim</h2>
+<div class="container">
+    <div class="content-wrapper">
+        <h2 class="page-title">Profil Bilgilerim</h2>
 
-<form asp-action="Profile" asp-controller="User" method="post" enctype="multipart/form-data" id="profileForm">
-    <div class="form-group mb-3">
-        <label>Kullanıcı Adı</label>
-        <input asp-for="UserName" class="form-control" />
-        <span asp-validation-for="UserName" class="text-danger"></span>
+        <form asp-action="Profile" asp-controller="User" method="post" enctype="multipart/form-data" id="profileForm">
+            <div class="form-group">
+                <label for="UserName">Kullanıcı Adı</label>
+                <input asp-for="UserName" class="form-control" />
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="FullName">Ad Soyad</label>
+                <input asp-for="FullName" class="form-control" />
+                <span asp-validation-for="FullName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="Email">E-posta</label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Profil Resmi</label><br />
+
+                <!-- Önceki profil resmi -->
+                <img id="preview" src="~/images/users/@(Model.CurrentProfileImagePath ?? "user.png")" width="120" class="mb-2 rounded" />
+
+                <!-- Yeni resim seçilince değiştir -->
+                <input asp-for="ProfileImage" type="file" class="form-control mt-2" onchange="previewImage(this)" />
+            </div>
+
+            <button type="submit" class="btn btn-primary">Güncelle</button>
+        </form>
     </div>
-
-    <div class="form-group mb-3">
-        <label>Ad Soyad</label>
-        <input asp-for="FullName" class="form-control" />
-        <span asp-validation-for="FullName" class="text-danger"></span>
-    </div>
-
-    <div class="form-group mb-3">
-        <label>E-posta</label>
-        <input asp-for="Email" class="form-control" />
-        <span asp-validation-for="Email" class="text-danger"></span>
-    </div>
-
-    <div class="form-group mb-3">
-        <label>Profil Resmi</label><br />
-
-        <!-- Önceki profil resmi -->
-        <img id="preview" src="~/images/users/@(Model.CurrentProfileImagePath ?? "user.png")" width="120" class="mb-2 rounded" />
-
-        <!-- Yeni resim seçilince değiştir -->
-        <input asp-for="ProfileImage" type="file" class="form-control mt-2" onchange="previewImage(this)" />
-    </div>
-
-    <button type="submit" class="btn btn-success">Güncelle</button>
-</form>
+</div>
 
 @section Scripts {
     <script>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+HIYCHlH0hmOTCwDi9nhU+Wkp/Z8NKDawpQOkwMapB8=",
+  "Hash": "V2VTrYxwPmB0KUY5eGjqGbht5n3/s1w1Ab33z+zN2/U=",
   "Source": "AdminPanel",
   "BasePath": "_content/AdminPanel",
   "Mode": "Default",
@@ -36,6 +36,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\style.css"
+    },
+    {
+      "Identity": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\css\\ui-theme.css",
+      "SourceId": "AdminPanel",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\",
+      "BasePath": "_content/AdminPanel",
+      "RelativePath": "css/ui-theme#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ufzxufdlhw",
+      "Integrity": "qru4oKGi40k1Ej87Lp7gXTSManMAYmpbrcSnN9eiDDQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\ui-theme.css"
     },
     {
       "Identity": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\css\\users\\user.css",
@@ -1802,12 +1823,12 @@
       "OriginalItemSpec": "wwwroot\\login\\js\\main.js"
     },
     {
-      "Identity": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\uploads\\profile\\b35dc71d-1c4f-4f47-808e-012e4fc816ea.jpeg",
+      "Identity": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\uploads\\profile\\831f5a42-a9a2-4c56-9a35-ae3acdc3cc9a.jpeg",
       "SourceId": "AdminPanel",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\",
       "BasePath": "_content/AdminPanel",
-      "RelativePath": "uploads/profile/b35dc71d-1c4f-4f47-808e-012e4fc816ea#[.{fingerprint}]?.jpeg",
+      "RelativePath": "uploads/profile/831f5a42-a9a2-4c56-9a35-ae3acdc3cc9a#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1820,7 +1841,7 @@
       "Integrity": "FQ7Dl7AjBpkbZ9AUIa02I998qcVk8ECwu1iI/KZTkz4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\profile\\b35dc71d-1c4f-4f47-808e-012e4fc816ea.jpeg"
+      "OriginalItemSpec": "wwwroot\\uploads\\profile\\831f5a42-a9a2-4c56-9a35-ae3acdc3cc9a.jpeg"
     }
   ],
   "Endpoints": [
@@ -1903,6 +1924,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-7SU4dzjITFvck50N+4g/kWE8WFBTB0rncbLHZ4syP1Y="
+        }
+      ]
+    },
+    {
+      "Route": "css/ui-theme.css",
+      "AssetFile": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\css\\ui-theme.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8292"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qru4oKGi40k1Ej87Lp7gXTSManMAYmpbrcSnN9eiDDQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 13:36:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qru4oKGi40k1Ej87Lp7gXTSManMAYmpbrcSnN9eiDDQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/ui-theme.ufzxufdlhw.css",
+      "AssetFile": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\css\\ui-theme.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8292"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qru4oKGi40k1Ej87Lp7gXTSManMAYmpbrcSnN9eiDDQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 07 May 2025 13:36:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ufzxufdlhw"
+        },
+        {
+          "Name": "label",
+          "Value": "css/ui-theme.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qru4oKGi40k1Ej87Lp7gXTSManMAYmpbrcSnN9eiDDQ="
         }
       ]
     },
@@ -8795,8 +8898,8 @@
       ]
     },
     {
-      "Route": "uploads/profile/b35dc71d-1c4f-4f47-808e-012e4fc816ea.195mimyzhe.jpeg",
-      "AssetFile": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\uploads\\profile\\b35dc71d-1c4f-4f47-808e-012e4fc816ea.jpeg",
+      "Route": "uploads/profile/831f5a42-a9a2-4c56-9a35-ae3acdc3cc9a.195mimyzhe.jpeg",
+      "AssetFile": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\uploads\\profile\\831f5a42-a9a2-4c56-9a35-ae3acdc3cc9a.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8817,7 +8920,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 08:48:14 GMT"
+          "Value": "Wed, 07 May 2025 12:49:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8831,7 +8934,7 @@
         },
         {
           "Name": "label",
-          "Value": "uploads/profile/b35dc71d-1c4f-4f47-808e-012e4fc816ea.jpeg"
+          "Value": "uploads/profile/831f5a42-a9a2-4c56-9a35-ae3acdc3cc9a.jpeg"
         },
         {
           "Name": "integrity",
@@ -8840,8 +8943,8 @@
       ]
     },
     {
-      "Route": "uploads/profile/b35dc71d-1c4f-4f47-808e-012e4fc816ea.jpeg",
-      "AssetFile": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\uploads\\profile\\b35dc71d-1c4f-4f47-808e-012e4fc816ea.jpeg",
+      "Route": "uploads/profile/831f5a42-a9a2-4c56-9a35-ae3acdc3cc9a.jpeg",
+      "AssetFile": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\uploads\\profile\\831f5a42-a9a2-4c56-9a35-ae3acdc3cc9a.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8862,7 +8965,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 07 May 2025 08:48:14 GMT"
+          "Value": "Wed, 07 May 2025 12:49:07 GMT"
         },
         {
           "Name": "Cache-Control",

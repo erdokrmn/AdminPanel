@@ -1,4 +1,5 @@
 wwwroot\css\style.css
+wwwroot\css\ui-theme.css
 wwwroot\css\users\user.css
 wwwroot\Dashboard\dashboard.css
 wwwroot\images\default\user.png
@@ -83,4 +84,4 @@ wwwroot\login\fonts\poppins\Poppins-ThinItalic.ttf
 wwwroot\login\images\icons\favicon.ico
 wwwroot\login\images\img-01.png
 wwwroot\login\js\main.js
-wwwroot\uploads\profile\b35dc71d-1c4f-4f47-808e-012e4fc816ea.jpeg
+wwwroot\uploads\profile\831f5a42-a9a2-4c56-9a35-ae3acdc3cc9a.jpeg

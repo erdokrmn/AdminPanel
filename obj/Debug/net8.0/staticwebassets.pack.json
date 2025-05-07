@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
+      "Id": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\css\\ui-theme.css",
+      "PackagePath": "staticwebassets\\css\\ui-theme.css"
+    },
+    {
       "Id": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\css\\users\\user.css",
       "PackagePath": "staticwebassets\\css\\users\\user.css"
     },
@@ -341,8 +345,8 @@
       "PackagePath": "staticwebassets\\login\\js\\main.js"
     },
     {
-      "Id": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\uploads\\profile\\b35dc71d-1c4f-4f47-808e-012e4fc816ea.jpeg",
-      "PackagePath": "staticwebassets\\uploads\\profile\\b35dc71d-1c4f-4f47-808e-012e4fc816ea.jpeg"
+      "Id": "C:\\Users\\erdo\\source\\repos\\AdminPanel\\AdminPanel\\wwwroot\\uploads\\profile\\831f5a42-a9a2-4c56-9a35-ae3acdc3cc9a.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\profile\\831f5a42-a9a2-4c56-9a35-ae3acdc3cc9a.jpeg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.AdminPanel.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
